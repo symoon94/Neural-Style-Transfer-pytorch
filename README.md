@@ -7,5 +7,8 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 ![Neural-Style-Transfer](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/nst_model.png)
 
 
+## Result
+(in progress)
+
 ## Author
 Sooyoung Moon / @symoon94
