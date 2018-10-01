@@ -11,13 +11,11 @@ import matplotlib.pyplot as plt
 
 import model
 import utils
-import config as cfg
 
 
 nst = model.nst_model
 loader = utils.loader
 imshow = utils.imshow
-args = cfg
 
 def main(args):
 
