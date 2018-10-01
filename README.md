@@ -15,4 +15,4 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 
 
 ## Author
-Sooyoung Moon / @symoon94
+Sooyoung Moon / [@symoon94](https://twitter.com/?lang=ko)
