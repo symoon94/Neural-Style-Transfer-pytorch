@@ -8,6 +8,12 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 ![Neural-Style-Transfer](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/nst_model.png)
 
 
+## Usage
+To train a model with images you want to merge:
+
+    $ python train.py --c_weight=1 --content_img='images/dancing.jpg' --s_weight=100000 --size=128 --steps=300 --style_img='images/picasso.jpg'
+
+
 ## Result
 ![Result1](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result1.png)
 ![Result2](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result2.png)
