@@ -8,11 +8,10 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 
 
 ## Result
-(in progress)
+![Result1](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result1.png)
+![Result2](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result2.png)
+![Result3](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result3.png)
+
 
 ## Author
-<<<<<<< HEAD
 Sooyoung Moon / @symoon94
-=======
-Sooyoung Moon / @symoon94
->>>>>>> 52b29074683ed8c08537034254acbff94e6efa6a
