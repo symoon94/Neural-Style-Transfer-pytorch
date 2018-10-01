@@ -4,11 +4,15 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 
 
 ## Architecture
+(Figure 2.) Style transfer algorithm.
 ![Neural-Style-Transfer](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/nst_model.png)
 
 
 ## Result
-(in progress)
+![Result1](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result1.png)
+![Result2](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result2.png)
+![Result3](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result3.png)
+
 
 ## Author
 <<<<<<< HEAD
