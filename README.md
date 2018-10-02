@@ -18,6 +18,7 @@ To train a model with images you want to merge:
 ![Result1](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result1.png)
 ![Result2](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result2.png)
 ![Result3](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result3.png)
+![Result4](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/result4.png)
 
 
 ## Author
