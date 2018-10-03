@@ -13,7 +13,7 @@ def loader(content_img, style_img, size):
     style_img = Image.open(style_img)
     transform = transforms.Compose([
         transforms.Resize((size,size)),  # scale imported image
-        transforms.ToTensor()  # the order is important 'Resize first and ToTensor' 
+        transforms.ToTensor()  # the order is important 'Resize first and ToTensor'
     ])
     content_img_rsz = transform(content_img)
     style_img_rsz = transform(style_img)

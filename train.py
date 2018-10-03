@@ -29,7 +29,7 @@ def main(args):
 
     content_img, style_img = loader(content_img, style_img, size = size)
     input_img = content_img.clone()
-    
+
 
     model, style_losses, content_losses  = nst(content_img, style_img)
 
@@ -65,11 +65,14 @@ def main(args):
         optimizer.step(closure)
 
     input_img.data.clamp_(0,1)
-    return input_img
 
-    imshow(input_img, title = 'Input image')
+    imshow(content_img, title = 'Input image')
     plt.show()
 
+    plt.figure()
+    imshow(output, title = 'Output Image')
+    plt.pause(5)
+    plt.show()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -82,22 +85,5 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     print(args)
-    output = main(args)
 
-    plt.figure()
-    imshow(output, title = 'Output Image')
-    plt.pause(5)
-    plt.show()
-
-
-
-
-
-
-
-
-
-
-
-
-
+    main(args)
