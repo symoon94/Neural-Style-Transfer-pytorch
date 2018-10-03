@@ -29,7 +29,7 @@ To train a model with images you want to merge:
 - [ ] A Learned Representation for Artistic Style (2017) [[Paper]](https://arxiv.org/pdf/1610.07629.pdf)
 - [ ] Real-Time Neural Style Transfer for Videos (2017) [[Paper]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Real-Time_Neural_Style_CVPR_2017_paper.pdf)
 - [ ] Stereoscopic Neural Style Transfer (2018) [[Paper]](https://arxiv.org/pdf/1802.10591.pdf)
-- [ ] Separating Style and Content for Generalized Style Transfer [[Paper]](https://arxiv.org/pdf/1711.06454.pdf)
+- [ ] Separating Style and Content for Generalized Style Transfer (2018) [[Paper]](https://arxiv.org/pdf/1711.06454.pdf)
 
 
 ## Author
