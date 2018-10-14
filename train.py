@@ -17,9 +17,10 @@ import argparse
 nst = model.nst_model
 loader = utils.loader
 imshow = utils.imshow
+output = None
 
 def main(args):
-
+    global output
     content_img = args.content_img
     style_img = args.style_img
     size = args.size
@@ -38,6 +39,7 @@ def main(args):
     step = [0]
     while step[0] <= steps:
         def closure():
+            global output
             input_img.data.clamp_(0, 1)
             optimizer.zero_grad()
             output = model(input_img)
