@@ -65,13 +65,9 @@ def main(args):
         optimizer.step(closure)
 
     input_img.data.clamp_(0,1)
+    return input_img
 
     imshow(content_img, title = 'Input image')
-    plt.show()
-
-    plt.figure()
-    imshow(output, title = 'Output Image')
-    plt.pause(5)
     plt.show()
 
 if __name__ == "__main__":
@@ -85,5 +81,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     print(args)
+    output = main(args)
 
-    main(args)
+    plt.figure()
+    imshow(output, title = 'Output Image')
+    plt.pause(5)
+    plt.show()
