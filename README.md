@@ -58,4 +58,4 @@ which will print:
 
 ## Author
 
-Sooyoung Moon / [@symoon94](https://twitter.com/?lang=ko)
+Sooyoung Moon / [@symoon94](https://www.facebook.com/msy0128)
