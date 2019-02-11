@@ -38,14 +38,14 @@ which will print:
                     [--s_weight S_WEIGHT]
 
     optional arguments:
-    -h, --help            show this help message and exit
+    -h, --help                  show this help message and exit
     --content_img CONTENT_IMG
     --style_img STYLE_IMG
-    --size SIZE           if you want to get more clear pictures, increase the
-                            size
+    --size SIZE                 if you want to get more clear pictures, increase the
+                                size
     --steps STEPS
-    --c_weight C_WEIGHT   weighting factor for content reconstruction
-    --s_weight S_WEIGHT   weighting factor for style reconstruction
+    --c_weight C_WEIGHT         weighting factor for content reconstruction
+    --s_weight S_WEIGHT         weighting factor for style reconstruction
 
 
 ## Result
