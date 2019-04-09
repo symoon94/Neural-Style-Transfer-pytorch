@@ -84,10 +84,9 @@ class SL(nn.Module):
 def nst_model(content_img, style_img):
     vgg = models.vgg19(pretrained=True).features.eval()
     normalization = Normalization(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))
-    
+
     content_img = content_img.detach()
     style_img = style_img.detach()
-
     content_losses = []
     style_losses = []
 
@@ -101,7 +100,7 @@ def nst_model(content_img, style_img):
             style_loss = SL(style_target)
             style_losses.append(style_loss)
             model.add_module('styleloss_{}'.format(i),style_loss)
-            
+
             i += 1
 
         elif name in ['7']:
@@ -126,7 +125,7 @@ def nst_model(content_img, style_img):
 
         elif name in ['4','9']:
             model.add_module('maxpool_{}'.format(i),layer)
-            
+
             i += 1
 
         elif name == '11':

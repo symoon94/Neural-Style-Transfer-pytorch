@@ -11,6 +11,8 @@ import matplotlib.pyplot as plt
 def loader(content_img, style_img, size):
     content_img = Image.open(content_img)
     style_img = Image.open(style_img)
+    content_img = convert_mode(content_img)
+    style_img = convert_mode(style_img)
     transform = transforms.Compose([
         transforms.Resize((size,size)),  # scale imported image
         transforms.ToTensor()  # the order is important 'Resize first and ToTensor'
@@ -59,4 +61,13 @@ class Normalization(nn.Module):
         # normalize img
         return (img - self.mean) / self.std
 
-
+## RGBA 2 RGB
+def convert_mode(img):
+    if img.mode == "RGB":
+        return img
+    elif img.mode == "RGBA":
+        background = Image.new("RGB", img.size, (255, 255, 255))
+        background.paste(img, mask=img.split()[3])
+        background.save(img.filename, quality=100)
+        converted_img = Image.open(img.filename)
+        return converted_img
