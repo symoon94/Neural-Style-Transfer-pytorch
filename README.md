@@ -21,10 +21,10 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 
 To train a model with images you want to merge:
 
-    $ python train.py --c_weight=1
-                      --s_weight=100000
-                      --content_img='images/dancing.jpg'
-                      --style_img='images/picasso.jpg'
+    $ python train.py --c_weight=1 \
+                      --s_weight=100000 \
+                      --content_img='images/dancing.jpg' \
+                      --style_img='images/picasso.jpg' \
                       --size=128 --steps=300
 
 To see all training options, run:
