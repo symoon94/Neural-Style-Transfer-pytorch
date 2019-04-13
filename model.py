@@ -51,7 +51,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-
 import torchvision.models as models
 
 import utils
@@ -80,7 +79,7 @@ class SL(nn.Module):
         self.loss = F.mse_loss(G, self.target)
         return input
 
-
+## Generating the 'Neural Style Transfer' Model
 def nst_model(content_img, style_img):
     vgg = models.vgg19(pretrained=True).features.eval()
     normalization = Normalization(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225))
@@ -95,17 +94,14 @@ def nst_model(content_img, style_img):
     for name, layer in vgg._modules.items():
         if name in ['0','2','5','10']:
             model.add_module('conv_{}'.format(i),layer)
-
             style_target = model(style_img)
             style_loss = SL(style_target)
             style_losses.append(style_loss)
             model.add_module('styleloss_{}'.format(i),style_loss)
-
             i += 1
 
         elif name in ['7']:
             model.add_module('conv_{}'.format(i),layer)
-
             content_target = model(content_img)
             content_loss = CL(content_target)
             content_losses.append(content_loss)
@@ -114,18 +110,15 @@ def nst_model(content_img, style_img):
             style_loss = SL(style_target)
             style_losses.append(style_loss)
             model.add_module('styleloss_{}'.format(i),style_loss)
-
             i += 1
 
         elif name in ['1','3','6','8']:
             layer = nn.ReLU(inplace=False)
             model.add_module('relu_{}'.format(i),layer)
-
             i += 1
 
         elif name in ['4','9']:
             model.add_module('maxpool_{}'.format(i),layer)
-
             i += 1
 
         elif name == '11':

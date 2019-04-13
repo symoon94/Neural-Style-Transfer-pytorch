@@ -28,7 +28,7 @@ def main(args):
     s_weight = args.s_weight
 
     content_img, style_img = loader(content_img, style_img, size = size)
-    input_img = content_img.clone()
+    input_img = content_img.clone() # just noise array is fine
 
 
     model, style_losses, content_losses  = nst(content_img, style_img)

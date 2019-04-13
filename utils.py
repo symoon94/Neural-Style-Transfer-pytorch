@@ -13,7 +13,7 @@ def loader(content_img, style_img, size):
     style_img = Image.open(style_img)
     content_img = convert_mode(content_img)
     style_img = convert_mode(style_img)
-    transform = transforms.Compose([
+    transform = transforms.Compose([    # convert img into the data format
         transforms.Resize((size,size)),  # scale imported image
         transforms.ToTensor()  # the order is important 'Resize first and ToTensor'
     ])
@@ -50,7 +50,6 @@ def gram_matrix(input):
     return G.div(b*c*h*w)
 
 
-## Generating the 'Neural Style Transfer' Model
 class Normalization(nn.Module):
     def __init__(self, mean, std):
         super(Normalization, self).__init__()
@@ -71,3 +70,6 @@ def convert_mode(img):
         background.save(img.filename, quality=100)
         converted_img = Image.open(img.filename)
         return converted_img
+
+## check if images are successfully loaded
+# loader("images/arizona.jpg", "images/snow.jpg", 128)
