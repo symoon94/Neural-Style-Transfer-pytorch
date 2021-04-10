@@ -50,10 +50,13 @@ which will print:
 
 ## Result
 
+![Result5](assets/result5.png)
 ![Result1](assets/result1.png)
 ![Result2](assets/result2.png)
 ![Result3](assets/result3.png)
 ![Result4](assets/result4.png)
+
+[Poster Presentation](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/soo_poster.pdf)
 
 
 ## Author
