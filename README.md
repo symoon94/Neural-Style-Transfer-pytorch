@@ -47,7 +47,7 @@ which will print:
 
 ## Result
 
-![poster_result.png](assets/poster_result.png)
+![Result0](assets/result0.png)
 ![Result1](assets/result1.png)
 ![Result2](assets/result2.png)
 ![Result3](assets/result3.png)
