@@ -4,7 +4,6 @@
 
 Pytorch implementation of [Image Style Transfer Using Convolutional Neural Networks](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf). It is my first paper implementation so it would be quite awkward. I recommend you use it only for a reference. The [Tutorial Code](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html) was very helpful for me to complete my code.
 
-
 ## To-do
 
 - [x] Image Style Transfer Using Convolutional Neural Networks (2016) [[Paper]](https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Gatys_Image_Style_Transfer_CVPR_2016_paper.pdf)
@@ -15,7 +14,6 @@ Pytorch implementation of [Image Style Transfer Using Convolutional Neural Netwo
 - [ ] Real-Time Neural Style Transfer for Videos (2017) [[Paper]](http://openaccess.thecvf.com/content_cvpr_2017/papers/Huang_Real-Time_Neural_Style_CVPR_2017_paper.pdf)
 - [ ] Stereoscopic Neural Style Transfer (2018) [[Paper]](https://arxiv.org/pdf/1802.10591.pdf)
 - [ ] Separating Style and Content for Generalized Style Transfer (2018) [[Paper]](https://arxiv.org/pdf/1711.06454.pdf)
-
 
 ## Usage
 
@@ -47,10 +45,9 @@ which will print:
     --c_weight C_WEIGHT         weighting factor for content reconstruction
     --s_weight S_WEIGHT         weighting factor for style reconstruction
 
-
 ## Result
 
-![Result5](assets/result5.png)
+![poster_result.png](assets/poster_result.png)
 ![Result1](assets/result1.png)
 ![Result2](assets/result2.png)
 ![Result3](assets/result3.png)
@@ -58,7 +55,6 @@ which will print:
 
 [Poster Presentation](https://github.com/symoon94/Neural-Style-Transfer-pytorch/blob/master/assets/soo_poster.pdf)
 
-
 ## Author
 
-Sooyoung Moon / [@symoon94](https://www.facebook.com/msy0128) 
+Sooyoung Moon / [@symoon94](https://www.facebook.com/msy0128)
