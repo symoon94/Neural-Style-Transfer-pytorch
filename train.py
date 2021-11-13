@@ -7,7 +7,6 @@ import torchvision
 import torchvision.transforms as transforms
 
 import matplotlib.pyplot as plt
-from PIL import Image
 
 import model
 import utils
@@ -66,11 +65,11 @@ def main(args):
 
         optimizer.step(closure)
 
+    imshow(content_img, title='Input image')
+    plt.show()
+
     input_img.data.clamp_(0,1)
     return input_img
-
-    imshow(content_img, title = 'Input image')
-    plt.show()
 
 
 if __name__ == "__main__":
@@ -92,4 +91,5 @@ if __name__ == "__main__":
     plt.pause(5)
     plt.show()
 
-    plt.savefig('./output.png')
+    if args.output_path is not None:
+        plt.savefig(args.output_path)
