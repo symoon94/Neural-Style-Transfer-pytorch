@@ -7,6 +7,7 @@ import torchvision
 import torchvision.transforms as transforms
 
 import matplotlib.pyplot as plt
+from PIL import Image
 
 import model
 import utils
@@ -91,5 +92,8 @@ if __name__ == "__main__":
     plt.pause(5)
     plt.show()
 
+
+
     if args.output_path is not None:
-        plt.savefig(args.output_path)
+        img = transforms.ToPILImage(output)
+        img.save(args.output_path)
