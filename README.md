@@ -23,6 +23,7 @@ To train a model with images you want to merge:
                       --s_weight=100000 \
                       --content_img='images/dancing.jpg' \
                       --style_img='images/picasso.jpg' \
+                      --output_path='./output.jpg' \
                       --size=128 --steps=300
 
 To see all training options, run:
@@ -32,13 +33,14 @@ To see all training options, run:
 which will print:
 
     usage: train.py [-h] [--content_img CONTENT_IMG] [--style_img STYLE_IMG]
-                    [--size SIZE] [--steps STEPS] [--c_weight C_WEIGHT]
-                    [--s_weight S_WEIGHT]
+                    [--output_path OUTPUT_PATH] [--size SIZE] [--steps STEPS]
+                    [--c_weight C_WEIGHT] [--s_weight S_WEIGHT]
 
     optional arguments:
     -h, --help                  show this help message and exit
     --content_img CONTENT_IMG
     --style_img STYLE_IMG
+    --output_path OUTPUT_PATH
     --size SIZE                 if you want to get more clear pictures, increase the
                                 size
     --steps STEPS
