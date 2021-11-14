@@ -95,5 +95,6 @@ if __name__ == "__main__":
 
 
     if args.output_path is not None:
-        img = transforms.ToPILImage(output)
+        img = transforms.ToPILImage()(output.squeeze())
         img.save(args.output_path)
+        print('Saved!')
